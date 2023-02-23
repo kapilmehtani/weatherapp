@@ -6,7 +6,7 @@
 <div class="container">
   <div class="upper">
     <img src="hot.png" alt="" *ngIf="false" />
-    <img src="download.jpg" alt="" *ngIf="true" />
+    <img src="../assets/download.jpg"  alt="colddd" *ngIf="true" />
     <div class="weather-data">
       <div class="location">{{weather.name}}</div>
       <div class="temp">{{ weather.main.temp | number : "1.0-0" }}°F</div>
@@ -17,28 +17,28 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="info-block-label">
-          <img src="min.png" alt="" />
+          <img src="../assets/min.png" alt="min" />
           <span>min</span>
         </div>
         <div class="info-block-value">{{weather.main.temp_min | number : "1.0-0" }}°F</div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="max.png" alt="" />
+          <img src="../assets/max.png" alt="" />
           <span>max</span>
         </div>
         <div class="info-block-value">{{weather.main.temp_max | number : "1.0-0" }}°F</div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="humidity.png" alt="" />
+          <img src="../assets/humidity.png" alt="" />
           <span>humidity</span>
         </div>
         <div class="info-block-value">{{weather.main.humidity}}%</div>
       </div>
       <div class="info-block">
         <div class="info-block-label">
-          <img src="wind.png" alt="" />
+          <img src="../assets/wind.png" alt="" />
           <span>wind speed</span>
         </div>
         <div class="info-block-value">{{weather.wind.speed}}km/hr</div>
